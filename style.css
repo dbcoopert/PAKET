@@ -1,0 +1,308 @@
+* {
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul li span .bold {
+    font-weight: 800;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    font-family: cursive;
+    font-size: 3em;
+    position: absolute;
+    top: 1.8em;
+    background: linear-gradient(to left, red, yellow, green, blue, orange);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    font-weight: bolder;
+    animation: animated 6s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 161px;
+    }
+}
+
+.content-dua:target,
+.content-tiga-kuota:target,
+.content-empat-k-indosat:target,
+.content-lima-k-three:target,
+.content-enam-k-axis:target,
+.content-tujuh-smartfren:target,
+.token:target,
+.diamond:target {
+    display: flex;
+    animation: animation 0.5s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    min-width: 434px;
+    height: 100dvh;
+    background-color: white;
+}
+
+.content-satu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    height: 80%;
+    width: 50%;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.content-satu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.content-satu ul li {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: .1s ease-in-out;
+}
+
+.content-satu ul li a {
+    color: black;
+}
+
+/* content dua */
+.content-dua,
+.content-empat-k-indosat,
+.token,
+.content-lima-k-three,
+.content-enam-k-axis,
+.content-tujuh-smartfren,
+.diamond {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 7px;
+    position: absolute;
+    top: 8%;
+    height: 85%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    width: 85%;
+    background-color: white;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.content-dua span a,
+.content-tiga-kuota span a,
+.content-empat-k-indosat span a,
+.token span a,
+.content-lima-k-three span a,
+.content-enam-k-axis span a,
+.content-tujuh-smartfren span a,
+.diamond span a {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: .8em;
+    color: black;
+    font-weight: 800;
+    background-color: #aaaa;
+    padding: 1px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content-empat-k-indosat {
+    background-color: yellow;
+}
+
+.content-lima-k-three {
+    background-color: rgb(150, 150, 150);
+}
+
+.content-tujuh-smartfren {
+    background-color: rgb(255, 217, 0);
+}
+
+.content-dua .pulsa,
+.kuota,
+.token .tkn,
+.diamond,
+.content-lima-k-three {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.content-dua ul,
+.content-empat-k-indosat ul,
+.token ul,
+.content-lima-k-three ul,
+.content-enam-k-axis ul,
+.content-tujuh-smartfren ul,
+.diamond ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6em;
+}
+
+.content-dua ul li,
+.content-empat-k-indosat ul li,
+.token ul li,
+.content-lima-k-three ul li,
+.content-enam-k-axis ul li,
+.content-tujuh-smartfren ul li,
+.diamond ul li {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: left;
+}
+
+.content-dua ul li:hover,
+.content-empat-k-indosat ul li:hover,
+.token ul li:hover,
+.content-lima-k-three ul li:hover,
+.content-enam-k-axis ul li:hover,
+.content-tujuh-smartfren ul li:hover,
+.diamond ul li:hover {
+    background-color: #aaaa;
+}
+
+.diamond ul li,
+.content-lima-k-three ul li {
+    font-size: .7em;
+}
+
+.content-dua ul li a,
+.content-empat-k-indosat ul li a,
+.token ul li a,
+.content-lima-k-three ul li a,
+.content-enam-k-axis ul li a,
+.content-tujuh-smartfren ul li a,
+.diamond ul li a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: black;
+}
+
+.content-empat-k-indosat ul li a::after,
+.token ul li a::after,
+.content-dua ul li a::after,
+.content-lima-k-three ul li a::after,
+.content-enam-k-axis ul li a::after,
+.content-tujuh-smartfren ul li a::after,
+.diamond ul li a::after {
+    content: 'Hubungi Saya';
+    position: absolute;
+    font-size: 0.8em;
+    right: 4px;
+    top: 15px;
+    font-weight: 500;
+    background-color: rgb(0, 167, 0);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+/* content tiga */
+.content-tiga-kuota {
+    width: 85%;
+    height: 85%;
+    display: none;
+    position: absolute;
+    border-radius: 7px;
+    background-color: white;
+    top: 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 black;
+}
+
+/* .content-tiga-kuota > h2 {
+            position: relative;
+        } */
+
+.content-tiga-kuota ul {
+    padding: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.content-tiga-kuota ul li {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    transition: .1s ease-in-out;
+}
+
+.content-tiga-kuota ul li:hover,
+.content-satu ul li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px 0 black;
+}
+
+.content-tiga-kuota ul li a {
+    color: black;
+}
+
+/* content empat */
+ul .kta {
+    color: rgb(80, 80, 80);
+    font-weight: 600;
+    font-size: 0.9em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+}
+
+/* content lima three */
+
+/* content enam axis */
+.content-enam-k-axis {
+    background-color: rgb(0, 68, 255);
+    color: white;
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
